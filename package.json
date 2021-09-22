@@ -4,7 +4,6 @@
   "description": "Sample tests using webdriverio",
   "main": "index.js",
   "scripts": {
-    "bundle": "./node_modules/.bin/npm-bundle",
     "test": "./node_modules/.bin/mocha tests",
     "clean": "rm -rf node_modules && rm -f package-lock.json && npm install"
   },
