@@ -73,10 +73,21 @@ const iosWebOptions = Object.assign(
   },
   serverConfig
 );
-
+const opts = {
+  path: '/wd/hub',
+  port: 4723,
+  capabilities: {
+    platformName: "Android",
+    platformVersion: "8",
+    deviceName: "Android Emulator",
+    browserName: 'Chrome',
+    automationName: "UiAutomator2"
+  }
+};
 module.exports = {
   androidOptions,
   iosOptions,
   androidWebOptions,
-  iosWebOptions
+  iosWebOptions,
+  opts,
 };
